@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> GEO标签寻量仪表盘 </title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="shortcut icon" href="./img/favicon.ico" />
+		<link rel="stylesheet" href="./font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="./css/daterangepicker.css" />
+		<link rel="stylesheet" href="./css/site.min.css" />
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js">
+			</script>
+			<script src="js/respond.min.js">
+			</script>
+		<![endif]-->
+		<script type="text/javascript" src="./js/site.min.js"></script>
+		<script type="text/javascript" src="./js/moment.min.js"></script>
+		<script type="text/javascript" src="./js/jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="./js/jquery.fs.selecter.min.js"></script>
+		<script type="text/javascript" src="./js/vue.min.js"></script>
+		<script type="text/javascript" src="./js/highcharts.js"></script>
+		<script type="text/javascript" src="./js/vue-highcharts.js"></script>
+	</head>
+	<body style="background: #f6f7f7;">
+		<div class="paddingH10" id="app">
+			<div class="geo-directional-overview">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							基础数据
+						</h3>
+					</div>
+					<div class="panel-body">
+						<div class="list-group-item">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="color-swatches">
+										<div class="icon inline">
+											<i class="fa fa-bold"></i>
+										</div>
+										<div class="swatches inline">
+											<div class="clearfix">
+												<div class="light">
+												63,717,998
+												</div>
+											</div>
+											<div class="infos">
+												<h4>bloomfilter非精准匹配量</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="color-swatches">
+										<div class="icon inline">
+											<i class="fa fa-compress"></i>
+										</div>
+										<div class="swatches inline">
+											<div class="clearfix">
+												<div class="light">
+												45607596
+												</div>
+											</div>
+											<div class="infos">
+												<h4>反馈精准匹配量</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="color-swatches">
+										<div class="icon inline">
+											<i class="fa fa-tags"></i>
+										</div>
+										<div class="swatches inline">
+											<div class="clearfix">
+												<div class="light">
+												25183723
+												</div>
+											</div>
+											<div class="infos">
+												<h4>标签数据输出量</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							GEO日活跃
+						</h3>
+					</div>
+					<div class="panel-body">
+						<div class="list-group-item">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="color-swatches">
+										<div class="icon inline">
+											<i class="fa fa-user"></i>
+										</div>
+										<div class="swatches inline">
+											<div class="clearfix">
+												<div class="light">
+												1000000
+												</div>
+											</div>
+											<div class="infos">
+												<h4>日活跃uv</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="color-swatches">
+										<div class="icon inline">
+											<i class="fa fa-child"></i>
+										</div>
+										<div class="swatches inline">
+											<div class="clearfix">
+												<div class="light">
+												10000000
+												</div>
+											</div>
+											<div class="infos">
+												<h4>日活跃pv</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-primary tag-tab">
+					<ul class="nav nav-tabs nav-justified">
+						<li class="active">
+							<a href="#finance" data-toggle="tab">
+								金融人群
+							</a>
+						</li>
+						<li class="">
+							<a href="#unfinance" data-toggle="tab">
+								非金融人群
+							</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane finance fade active in" id="finance">
+							<div class="list-group-item">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="color-swatches">
+											<div class="icon inline">
+												<i class="fa fa-bar-chart"></i>
+											</div>
+											<div class="swatches inline">
+												<div class="clearfix">
+													<div class="light">
+													1000000
+													</div>
+												</div>
+												<div class="infos">
+													<h4>总日uv</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="color-swatches">
+											<div class="icon inline">
+												<i class="fa fa-bar-chart"></i>
+											</div>
+											<div class="swatches inline">
+												<div class="clearfix">
+													<div class="light">
+													100000
+													</div>
+												</div>
+												<div class="infos">
+													<h4>12355日uv</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="color-swatches">
+											<div class="icon inline">
+												<i class="fa fa-mouse-pointer"></i>
+											</div>
+											<div class="swatches inline">
+												<div class="clearfix">
+													<div class="light">
+													99999999
+													</div>
+												</div>
+												<div class="infos">
+													<h4>总日pv</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="color-swatches">
+											<div class="icon inline">
+												<i class="fa fa-mouse-pointer"></i>
+											</div>
+											<div class="swatches inline">
+												<div class="clearfix">
+													<div class="light">
+													999999
+													</div>
+												</div>
+												<div class="infos">
+													<h4>12355日pv</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="list-group-item">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="color-swatches">
+											<div class="icon inline">
+												<i class="fa fa-line-chart"></i>
+											</div>
+											<div class="swatches inline">
+												<div class="clearfix">
+													<div class="light">
+													1000000
+													</div>
+												</div>
+												<div class="infos">
+													<h4>效果广告日uv</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="color-swatches">
+											<div class="icon inline">
+												<i class="fa fa-line-chart"></i>
+											</div>
+											<div class="swatches inline">
+												<div class="clearfix">
+													<div class="light">
+													100000
+													</div>
+												</div>
+												<div class="infos">
+													<h4>效果广告12355日uv</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="color-swatches">
+											<div class="icon inline">
+												<i class="fa fa-balance-scale"></i>
+											</div>
+											<div class="swatches inline">
+												<div class="clearfix">
+													<div class="light">
+													99999999
+													</div>
+												</div>
+												<div class="infos">
+													<h4>效果广告日pv</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="color-swatches">
+											<div class="icon inline">
+												<i class="fa fa-balance-scale"></i>
+											</div>
+											<div class="swatches inline">
+												<div class="clearfix">
+													<div class="light">
+													999999
+													</div>
+												</div>
+												<div class="infos">
+													<h4>效果广告12355日pv</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="list-group-item">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="color-swatches">
+											<div class="icon inline">
+												<i class="fa fa-percent"></i>
+											</div>
+											<div class="swatches inline">
+												<div class="clearfix">
+													<div class="light">
+													20%
+													</div>
+												</div>
+												<div class="infos">
+													<h4>效果广告uv与总uv占比</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="color-swatches">
+											<div class="icon inline">
+												<i class="fa fa-percent"></i>
+											</div>
+											<div class="swatches inline">
+												<div class="clearfix">
+													<div class="light">
+													20%
+													</div>
+												</div>
+												<div class="infos">
+													<h4>效果广告pv与总pv占比</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane unfinance fade" id="unfinance">
+							<div class="list-group-item">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="color-swatches">
+											<div class="icon inline">
+												<i class="fa fa-bar-chart"></i>
+											</div>
+											<div class="swatches inline">
+												<div class="clearfix">
+													<div class="light">
+													1000000
+													</div>
+												</div>
+												<div class="infos">
+													<h4>总日uv</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="color-swatches">
+											<div class="icon inline">
+												<i class="fa fa-bar-chart"></i>
+											</div>
+											<div class="swatches inline">
+												<div class="clearfix">
+													<div class="light">
+													100000
+													</div>
+												</div>
+												<div class="infos">
+													<h4>12355日uv</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="color-swatches">
+											<div class="icon inline">
+												<i class="fa fa-mouse-pointer"></i>
+											</div>
+											<div class="swatches inline">
+												<div class="clearfix">
+													<div class="light">
+													99999999
+													</div>
+												</div>
+												<div class="infos">
+													<h4>总日pv</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="color-swatches">
+											<div class="icon inline">
+												<i class="fa fa-mouse-pointer"></i>
+											</div>
+											<div class="swatches inline">
+												<div class="clearfix">
+													<div class="light">
+													999999
+													</div>
+												</div>
+												<div class="infos">
+													<h4>12355日pv</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="list-group-item">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="color-swatches">
+											<div class="icon inline">
+												<i class="fa fa-line-chart"></i>
+											</div>
+											<div class="swatches inline">
+												<div class="clearfix">
+													<div class="light">
+													1000000
+													</div>
+												</div>
+												<div class="infos">
+													<h4>效果广告日uv</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="color-swatches">
+											<div class="icon inline">
+												<i class="fa fa-line-chart"></i>
+											</div>
+											<div class="swatches inline">
+												<div class="clearfix">
+													<div class="light">
+													100000
+													</div>
+												</div>
+												<div class="infos">
+													<h4>效果广告12355日uv</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="color-swatches">
+											<div class="icon inline">
+												<i class="fa fa-balance-scale"></i>
+											</div>
+											<div class="swatches inline">
+												<div class="clearfix">
+													<div class="light">
+													99999999
+													</div>
+												</div>
+												<div class="infos">
+													<h4>效果广告日pv</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="color-swatches">
+											<div class="icon inline">
+												<i class="fa fa-balance-scale"></i>
+											</div>
+											<div class="swatches inline">
+												<div class="clearfix">
+													<div class="light">
+													999999
+													</div>
+												</div>
+												<div class="infos">
+													<h4>效果广告12355日pv</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="list-group-item">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="color-swatches">
+											<div class="icon inline">
+												<i class="fa fa-percent"></i>
+											</div>
+											<div class="swatches inline">
+												<div class="clearfix">
+													<div class="light">
+													20%
+													</div>
+												</div>
+												<div class="infos">
+													<h4>效果广告uv与总uv占比</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="color-swatches">
+											<div class="icon inline">
+												<i class="fa fa-percent"></i>
+											</div>
+											<div class="swatches inline">
+												<div class="clearfix">
+													<div class="light">
+													20%
+													</div>
+												</div>
+												<div class="infos">
+													<h4>效果广告pv与总pv占比</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="geo-directional-chart" style="padding: 0;">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							GEO数据变化
+						</h3>
+					</div>
+					<div class="panel-body">
+						<div class="geo-directional-select">
+							<div class="list-group">
+								<div class="list-group-item">
+									<div class="row">
+										<div class="form-group col-md-3 inline">
+				            				<label class="control-label inline">日期：</label>
+				            				<input type="text" class="form-control inline" style="width: 260px;" v-model="timerange" id="multiDate_sum">
+										</div>
+										<div class="form-group col-md-1 inline">
+							                <button type="button" class="btn btn-primary btn-block inline" @click="query">查询</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-12">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h3 class="panel-title">
+											基础数据(基础数据变化／周为单位)
+										</h3>
+									</div>
+									<div class="panel-body">
+										<highcharts :options="tagBasic" ref="highcharts"></highcharts>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h3 class="panel-title">
+											uv，pv变化趋势
+										</h3>
+									</div>
+									<div class="panel-body">
+										<div class="panel panel-primary tag-tab">
+											<ul class="nav nav-tabs nav-justified">
+												<li class="active">
+													<a href="#tag-sum-total" data-toggle="tab">
+														总和
+													</a>
+												</li>
+												<li class="">
+													<a href="#tag-sum-effect" data-toggle="tab">
+														效果广告
+													</a>
+												</li>
+											</ul>
+											<div class="tab-content">
+												<div class="tab-pane finance fade active in" id="tag-sum-total">
+													<div class="row">
+														<div class="col-md-6">
+															<highcharts :options="tagBustrendUV" ref="highcharts"></highcharts>
+														</div>
+														<div class="col-md-6">
+															<highcharts :options="tagBustrendPV" ref="highcharts"></highcharts>
+														</div>
+													</div>
+													<div class="row marginT20">
+														<div class="col-md-6">
+															<highcharts :options="tagApptrendUV" ref="highcharts"></highcharts>
+														</div>
+														<div class="col-md-6">
+															<highcharts :options="tagApptrendPV" ref="highcharts"></highcharts>
+														</div>
+													</div>
+												</div>
+												<div class="tab-pane unfinance fade" id="tag-sum-effect">
+													<div class="row">
+														<div class="col-md-6">
+															<highcharts :options="tagBustrendDetailUV" ref="highcharts"></highcharts>
+														</div>
+														<div class="col-md-6">
+															<highcharts :options="tagBustrendDetailPV" ref="highcharts"></highcharts>
+														</div>
+													</div>
+													<div class="row marginT20">
+														<div class="col-md-6">
+															<highcharts :options="tagApptrendDetailUV" ref="highcharts"></highcharts>
+														</div>
+														<div class="col-md-6">
+															<highcharts :options="tagApptrendDetailPV" ref="highcharts"></highcharts>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							细粒度标签寻量
+						</h3>
+					</div>
+					<div class="panel-body">
+						<div class="geo-directional-select">
+							<div class="list-group">
+								<div class="list-group-item">
+									<div class="row">
+										<div class="form-group col-md-3 inline">
+				            				<label class="control-label inline">日期：</label>
+				            				<input type="text" class="form-control inline" style="width: 260px;" v-model="detailTimer" id="multiDate_detail">
+										</div>
+										<div class="form-group col-md-1 inline">
+							                <button type="button" class="btn btn-primary btn-block inline" @click="detailQuery">查询</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row paddingH20">
+							
+							<div class="panel panel-primary tag-tab">
+								<ul class="nav nav-tabs nav-justified">
+									<li class="active">
+										<a href="#tag-detail-total" data-toggle="tab">
+											总和
+										</a>
+									</li>
+									<li class="">
+										<a href="#tag-detail-effect" data-toggle="tab">
+											效果广告
+										</a>
+									</li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane finance fade active in" id="tag-detail-total">
+										<div class="row">
+											<div class="col-md-6">
+												<highcharts :options="businessInterestUV" ref="highcharts"></highcharts>
+											</div>
+											<div class="col-md-6">
+												<highcharts :options="businessInterestPV" ref="highcharts"></highcharts>
+											</div>
+										</div>
+										<div class="row marginT20">
+											<div class="col-md-6">
+												<highcharts :options="appUV" ref="highcharts"></highcharts>
+											</div>
+											<div class="col-md-6">
+												<highcharts :options="appPV" ref="highcharts"></highcharts>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane unfinance fade" id="tag-detail-effect">
+										<div class="row">
+											<div class="col-md-6">
+												<highcharts :options="businessInterestDetailUV" ref="highcharts"></highcharts>
+											</div>
+											<div class="col-md-6">
+												<highcharts :options="businessInterestDetailPV" ref="highcharts"></highcharts>
+											</div>
+										</div>
+										<div class="row marginT20">
+											<div class="col-md-6">
+												<highcharts :options="appDetailUV" ref="highcharts"></highcharts>
+											</div>
+											<div class="col-md-6">
+												<highcharts :options="appDetailPV" ref="highcharts"></highcharts>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="./js/jquery.daterangepicker.js"></script>
+	<script type="text/javascript" src="./js/tag.js"></script>
+</html>

@@ -1,0 +1,36 @@
+{
+  "code": 0,
+  "msg": "",
+  "result": [
+    {
+      "data_date": "03-19",
+      "directional_revenue": "782292.00",
+      "non_directional_revenue": "134584.00"
+    },
+    {
+      "data_date": "03-18",
+      "directional_revenue": "765002.00",
+      "non_directional_revenue": "111617.00"
+    },
+    {
+      "data_date": "03-17",
+      "directional_revenue": "755967.00",
+      "non_directional_revenue": "113988.00"
+    },
+    {
+      "data_date": "03-16",
+      "directional_revenue": "723358.00",
+      "non_directional_revenue": "100454.00"
+    },
+    {
+      "data_date": "03-15",
+      "directional_revenue": "709319.00",
+      "non_directional_revenue": "114340.00"
+    },
+    {
+      "data_date": "03-14",
+      "directional_revenue": "743233.00",
+      "non_directional_revenue": "98047.00"
+    }
+  ]
+}

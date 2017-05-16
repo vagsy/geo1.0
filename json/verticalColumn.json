@@ -1,0 +1,26 @@
+{
+  "code": 0,
+  "msg": "",
+  "result": [
+    {
+      "industry_name": "金融",
+      "total_revenue": "1320074.27"
+    },
+    {
+      "industry_name": "旅游",
+      "total_revenue": "795778.85"
+    },
+    {
+      "industry_name": "游戏",
+      "total_revenue": "619312.39"
+    },
+    {
+      "industry_name": "服饰",
+      "total_revenue": "603691.75"
+    },
+    {
+      "industry_name": "文化玩乐",
+      "total_revenue": "512797.06"
+    }
+  ]
+}

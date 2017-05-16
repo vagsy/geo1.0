@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> GEO定向运营仪表盘 </title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="shortcut icon" href="./img/favicon.ico" />
+		<link href="./font-awesome/css/font-awesome.css" rel="stylesheet">
+		<link rel="stylesheet" href="./css/daterangepicker.css">
+		<link rel="stylesheet" href="./css/site.min.css">
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js">
+			</script>
+			<script src="js/respond.min.js">
+			</script>
+		<![endif]-->
+		<script type="text/javascript" src="./js/site.min.js"></script>
+		<script type="text/javascript" src="./js/moment.min.js"></script>
+		
+		<script type="text/javascript" src="./js/jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="./js/jquery.fs.selecter.min.js"></script>
+		<script type="text/javascript" src="./js/vue.min.js"></script>
+		<script type="text/javascript" src="./js/highcharts.js"></script>
+		<script type="text/javascript" src="./js/vue-highcharts.min.js"></script>
+	</head>
+	<body style="background: #f6f7f7;">
+		<div class="" id="app"> 
+			<div class="geo-directional-overview">
+				<div class="list-group">
+					<div class="list-group-item">
+						<div class="row">
+							<div class="col-md-2">
+								<div class="color-swatches">
+									<div class="icon inline">
+										<i class="fa fa-tags"></i>
+									</div>
+									<div class="swatches inline">
+										<div class="clearfix">
+											<div class="light">
+											3000
+											</div>
+										</div>
+										<div class="infos">
+											<h4>广告总数量</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="color-swatches">
+									<div class="icon inline">
+										<i class="fa fa-pie-chart"></i>
+									</div>
+									<div class="swatches inline">
+										<div class="clearfix">
+											<div class="light">
+											90
+											</div>
+										</div>
+										<div class="infos">
+											<h4>定向广告总数</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="color-swatches">
+									<div class="icon inline">
+										<i class="fa fa-percent"></i>
+									</div>
+									<div class="swatches inline">
+										<div class="clearfix">
+											<div class="light">
+											3%
+											</div>
+										</div>
+										<div class="infos">
+											<h4>广告数量占比</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="color-swatches">
+									<div class="icon inline">
+										<i class="fa fa-dollar"></i>
+									</div>
+									<div class="swatches inline">
+										<div class="clearfix">
+											<div class="light">
+											¥0.6
+											</div>
+										</div>
+										<div class="infos">
+											<h4>总体平均CPC单价</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="color-swatches">
+									<div class="icon inline">
+										<i class="fa fa-long-arrow-right"></i>
+									</div>
+									<div class="swatches inline">
+										<div class="clearfix">
+											<div class="light">
+											¥0.7
+											</div>
+										</div>
+										<div class="infos">
+											<h4>定向平均CPC单价</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="color-swatches">
+									<div class="icon inline">
+										<i class="fa fa-level-up"></i>
+									</div>
+									<div class="swatches inline">
+										<div class="clearfix">
+											<div class="light">
+											16%
+											</div>
+										</div>
+										<div class="infos">
+											<h4>CPC增益率</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list-group-item">
+						<div class="row">
+							<div class="col-md-2">
+								<div class="color-swatches">
+									<div class="icon inline">
+										<i class="fa fa-database"></i>
+									</div>
+									<div class="swatches inline">
+										<div class="clearfix">
+											<div class="light">
+											¥560000
+											</div>
+										</div>
+										<div class="infos">
+											<h4>广告总消耗</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="color-swatches">
+									<div class="icon inline">
+										<i class="fa fa-shopping-cart"></i>
+									</div>
+									<div class="swatches inline">
+										<div class="clearfix">
+											<div class="light">
+											¥3000
+											</div>
+										</div>
+										<div class="infos">
+											<h4>定向广告消耗</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="color-swatches">
+									<div class="icon inline">
+										<i class="fa fa-percent"></i>
+									</div>
+									<div class="swatches inline">
+										<div class="clearfix">
+											<div class="light">
+											0.5%
+											</div>
+										</div>
+										<div class="infos">
+											<h4>广告消耗占比</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="color-swatches">
+									<div class="icon inline">
+										<i class="fa fa-user"></i>
+									</div>
+									<div class="swatches inline">
+										<div class="clearfix">
+											<div class="light">
+											1000
+											</div>
+										</div>
+										<div class="infos">
+											<h4>广告主数量</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="color-swatches">
+									<div class="icon inline">
+										<i class="fa fa-street-view"></i>
+									</div>
+									<div class="swatches inline">
+										<div class="clearfix">
+											<div class="light">
+											10
+											</div>
+										</div>
+										<div class="infos">
+											<h4>定向广告主数量</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="color-swatches">
+									<div class="icon inline">
+										<i class="fa fa-percent"></i>
+									</div>
+									<div class="swatches inline">
+										<div class="clearfix">
+											<div class="light">
+											1%
+											</div>
+										</div>
+										<div class="infos">
+											<h4>广告主占比</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list-group-item">
+						<div class="row">
+							<div class="col-md-2">
+								<div class="color-swatches">
+									<div class="icon inline">
+										<i class="fa fa-cny"></i>
+									</div>
+									<div class="swatches inline">
+										<div class="clearfix">
+											<div class="light">
+											¥300
+											</div>
+										</div>
+										<div class="infos">
+											<h4>数据收入</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="color-swatches">
+									<div class="icon inline">
+										<i class="fa fa-long-arrow-right"></i>
+									</div>
+									<div class="swatches inline">
+										<div class="clearfix">
+											<div class="light">
+											999999
+											</div>
+										</div>
+										<div class="infos">
+											<h4>定向曝光量</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="color-swatches">
+									<div class="icon inline">
+										<i class="fa fa-mouse-pointer"></i>
+									</div>
+									<div class="swatches inline">
+										<div class="clearfix">
+											<div class="light">
+											111111
+											</div>
+										</div>
+										<div class="infos">
+											<h4>定向点击量</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="color-swatches">
+									<div class="icon inline">
+										<i class="fa fa-balance-scale"></i>
+									</div>
+									<div class="swatches inline">
+										<div class="clearfix">
+											<div class="light">
+											20000000
+											</div>
+										</div>
+										<div class="infos">
+											<h4>商业人群效果库存pv</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="color-swatches">
+									<div class="icon inline">
+										<i class="fa fa-percent"></i>
+									</div>
+									<div class="swatches inline">
+										<div class="clearfix">
+											<div class="light">
+											50%
+											</div>
+										</div>
+										<div class="infos">
+											<h4>商业人群消耗占比</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="geo-directional-select">
+				<div class="list-group">
+					<div class="list-group-item">
+						<div class="row">
+							<div class="form-group col-md-3 inline" style="height: 34px;">
+			                  	<label class="control-label inline" style="position: relative; top: -10px;">筛选条件：</label>
+								<div class="inline" style="width: 200px;">
+									<select name="selecter_basic" class="filter-rule"  v-model="filterrule">
+										<option value="1">GEO汇总</option>
+										<option value="2">GEOapp应用</option>
+										<option value="3">GEO兴趣人群</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group col-md-3 inline">
+	            				<label class="control-label inline">日期：</label>
+	            				<input type="text" class="form-control inline" style="width: 260px;" v-model="timerange" id="multiDate">
+							</div>
+							<div class="form-group col-md-1 inline">
+				                <button type="button" class="btn btn-primary btn-block inline" @click="query">查询</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="geo-directional-chart">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">
+									GEO定向广告数量占比和消耗占比
+								</h3>
+							</div>
+							<div class="panel-body">
+								<highcharts :options="geoPrecent" ref="highcharts"></highcharts>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">
+									GEO定向广告数量和消耗
+								</h3>
+							</div>
+							<div class="panel-body">
+								<highcharts :options="geoConsume" ref="highcharts"></highcharts>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">
+									cpc，ctr增益变化
+								</h3>
+							</div>
+							<div class="panel-body">
+								<highcharts :options="cpcctrUp" ref="highcharts"></highcharts>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">
+									cpc定投和总体对比
+								</h3>
+							</div>
+							<div class="panel-body">
+								<highcharts :options="cpcCompare" ref="highcharts"></highcharts>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">
+									ctr定投和总体对比
+								</h3>
+							</div>
+							<div class="panel-body">
+								<highcharts :options="ctrCompare" ref="highcharts"></highcharts>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">
+									标签使用排行榜top10
+								</h3>
+							</div>
+							<div class="panel-body">
+								<highcharts :options="tagTop" ref="highcharts"></highcharts>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">
+									标签定向广告数量和广告主数量
+								</h3>
+							</div>
+							<div class="panel-body">
+								<highcharts :options="tagAdNum" ref="highcharts"></highcharts>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">
+									定向消耗广告主排行榜top10
+								</h3>
+							</div>
+							<div class="panel-body">
+								<highcharts :options="adTop" ref="highcharts"></highcharts>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">
+									广告主定向广告数量
+								</h3>
+							</div>
+							<div class="panel-body">
+								<highcharts :options="adusernum" ref="highcharts"></highcharts>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="./js/jquery.daterangepicker.js"></script>
+	<script type="text/javascript" src="./js/directional.js"></script>
+</html>

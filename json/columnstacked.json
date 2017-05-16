@@ -1,0 +1,321 @@
+{
+  "code": 0,
+  "msg": "",
+  "result": [
+    {
+      "industry_name": "金融类",
+      "total_revenue": "1320074.27",
+      "uv_12355": "1320074.27"
+    },
+    {
+      "industry_name": "投资理财",
+      "total_revenue": "795778.85",
+      "uv_12355": "795778.85"
+    },
+    {
+      "industry_name": "基金投资",
+      "total_revenue": "619312.39",
+      "uv_12355": "619312.39"
+    },
+    {
+      "industry_name": "股票",
+      "total_revenue": "603691.75",
+      "uv_12355": "603691.75"
+    },
+    {
+      "industry_name": "大宗商品",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "P2P类",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "贷款",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "消费分期",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "小额贷款",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "金融类",
+      "total_revenue": "1320074.27",
+      "uv_12355": "1320074.27"
+    },
+    {
+      "industry_name": "投资理财",
+      "total_revenue": "795778.85",
+      "uv_12355": "795778.85"
+    },
+    {
+      "industry_name": "基金投资",
+      "total_revenue": "619312.39",
+      "uv_12355": "619312.39"
+    },
+    {
+      "industry_name": "股票",
+      "total_revenue": "603691.75",
+      "uv_12355": "603691.75"
+    },
+    {
+      "industry_name": "大宗商品",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "P2P类",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "贷款",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "消费分期",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "小额贷款",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "金融类",
+      "total_revenue": "1320074.27",
+      "uv_12355": "1320074.27"
+    },
+    {
+      "industry_name": "投资理财",
+      "total_revenue": "795778.85",
+      "uv_12355": "795778.85"
+    },
+    {
+      "industry_name": "基金投资",
+      "total_revenue": "619312.39",
+      "uv_12355": "619312.39"
+    },
+    {
+      "industry_name": "股票",
+      "total_revenue": "603691.75",
+      "uv_12355": "603691.75"
+    },
+    {
+      "industry_name": "大宗商品",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "P2P类",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "贷款",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "消费分期",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "小额贷款",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "金融类",
+      "total_revenue": "1320074.27",
+      "uv_12355": "1320074.27"
+    },
+    {
+      "industry_name": "投资理财",
+      "total_revenue": "795778.85",
+      "uv_12355": "795778.85"
+    },
+    {
+      "industry_name": "基金投资",
+      "total_revenue": "619312.39",
+      "uv_12355": "619312.39"
+    },
+    {
+      "industry_name": "股票",
+      "total_revenue": "603691.75",
+      "uv_12355": "603691.75"
+    },
+    {
+      "industry_name": "大宗商品",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "P2P类",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "贷款",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "消费分期",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "小额贷款",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "金融类",
+      "total_revenue": "1320074.27",
+      "uv_12355": "1320074.27"
+    },
+    {
+      "industry_name": "投资理财",
+      "total_revenue": "795778.85",
+      "uv_12355": "795778.85"
+    },
+    {
+      "industry_name": "基金投资",
+      "total_revenue": "619312.39",
+      "uv_12355": "619312.39"
+    },
+    {
+      "industry_name": "股票",
+      "total_revenue": "603691.75",
+      "uv_12355": "603691.75"
+    },
+    {
+      "industry_name": "大宗商品",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "P2P类",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "贷款",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "消费分期",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "小额贷款",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "金融类",
+      "total_revenue": "1320074.27",
+      "uv_12355": "1320074.27"
+    },
+    {
+      "industry_name": "投资理财",
+      "total_revenue": "795778.85",
+      "uv_12355": "795778.85"
+    },
+    {
+      "industry_name": "基金投资",
+      "total_revenue": "619312.39",
+      "uv_12355": "619312.39"
+    },
+    {
+      "industry_name": "股票",
+      "total_revenue": "603691.75",
+      "uv_12355": "603691.75"
+    },
+    {
+      "industry_name": "大宗商品",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "P2P类",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "贷款",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "消费分期",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "小额贷款",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "金融类",
+      "total_revenue": "1320074.27",
+      "uv_12355": "1320074.27"
+    },
+    {
+      "industry_name": "投资理财",
+      "total_revenue": "795778.85",
+      "uv_12355": "795778.85"
+    },
+    {
+      "industry_name": "基金投资",
+      "total_revenue": "619312.39",
+      "uv_12355": "619312.39"
+    },
+    {
+      "industry_name": "股票",
+      "total_revenue": "603691.75",
+      "uv_12355": "603691.75"
+    },
+    {
+      "industry_name": "大宗商品",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "P2P类",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "贷款",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "消费分期",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    },
+    {
+      "industry_name": "小额贷款",
+      "total_revenue": "512797.06",
+      "uv_12355": "512797.06"
+    }
+  ]
+}
